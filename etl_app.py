@@ -13,7 +13,7 @@ st.set_page_config(
 # Estilos personalizados para darle un toque premium
 st.markdown("""
     <style>
-    .main-title { font-size: 48px; font-weight: bold; color: #1E3A8A; }
+    .main-title { font-size: 58px; font-weight: bold; color: #1E3A8A; }
     .subtitle { font-size: 18px; color: #555555; margin-bottom: 20px; }
     .step-header { font-size: 24px; font-weight: bold; color: #0D9488; margin-top: 10px; }
     </style>
