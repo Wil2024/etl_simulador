@@ -13,7 +13,7 @@ st.set_page_config(
 # Estilos personalizados para darle un toque premium
 st.markdown("""
     <style>
-    .main-title { font-size: 58px; font-weight: bold; color: #1E3A8A; }
+    .main-title { font-size: 48px; font-weight: bold; color: #1E3A8A; }
     .subtitle { font-size: 18px; color: #555555; margin-bottom: 20px; }
     .step-header { font-size: 24px; font-weight: bold; color: #0D9488; margin-top: 10px; }
     </style>
@@ -244,19 +244,14 @@ with tab4:
     else:
         st.info("Primero debes ejecutar el paso de 'LOAD' (Carga) en la pestaña anterior para poder visualizar el Dashboard con la base de datos final.")
 
-
-# ══════════════════════════════════════════════
-#  TAB 5: COMPARATIVA
-# ══════════════════════════════════════════════
-with tab5:
-    st.markdown('<p class="step-header">Comparativo de Herramientas ETL</p>', unsafe_allow_html=True)
-    st.write("Un resumen para orientar a los futuros directivos sobre qué herramienta elegir según el caso de uso.")
-    
-    comparativa = {
-        "Herramienta": ["PYTHON (Este simulador)", "SQL", "ALTERYX"],
-        "Perfil ideal": ["Data Engineers / Científicos de Datos", "Analistas de Datos / BI", "Analistas de Negocio (Business Users)"],
-        "Pros": ["Flexibilidad total, manejo de datos masivos, gratis.", "Estándar universal, súper veloz en bases de datos.", "No-code / Low-code, intuitivo, amigable."],
-        "Contras": ["Curva de aprendizaje de código alta.", "Limitado para datos no estructurados o APIs.", "Costo de licencia muy elevado."]
-    }
-    
-    st.table(pd.DataFrame(comparativa))
+# Footer con autoría y derechos (agregar al final del script)
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 12px; margin-top: 50px; color: #666;'>
+        ©️ 2026 Desarrollado por <b>Wilton Torvisco</b> | 
+        <a href='https://github.com/Wil2024' target='_blank'>GitHub</a> | 
+        Todos los derechos reservados.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
